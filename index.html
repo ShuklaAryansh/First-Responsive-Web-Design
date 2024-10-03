@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Profile</title>
+        <link rel="stylesheet" href="index.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+      <nav>
+                <div class="nav-container">
+                        <div class="logo">
+                                Aryansh <span>Shukla</span>
+                        </div>
+                        <div class="links">
+                                <div ><a href="#">Home</a></div>
+                                <div ><a href="#">About</a></div>
+                                <div ><a href="#">Skills</a></div>
+                                <div ><a href="#">Education</a></div>
+                                <div ><a href="#">Contact</a></div>
+                        </div>
+                </div>
+                <i class="fa-solid fa-bars hamburg"></i>
+      </nav>
+
+
+
+
+      <section>
+                <div class="main-container">
+                        <div class="content">
+                                <h1>Hey I'm <span >Aryansh</span></h1>
+                                <div class="typewritter">I'm a <span id="role">Web Development</span></div>
+                        
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,Lorem ipsum dolor sit amet Lorem ipsum dolor  sit amet consectetur adipisicing elit. Molestias, pariatur.</p>
+                        
+                                <div class="social-links">
+                                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                </div>
+
+                                <div class="btn">
+                                        <button>Download Resume</button>
+                                </div>
+                        </div>
+                        <div class="image"><img alt="Human Image" src="glass man.png"></div>
+                </div>
+
+                
+      </section>
+
+      <script>
+        const roles = ["Web Development","Learner","Coder","Creative Thinker"];
+        let index = 0;
+
+        function changeRole() {
+            index = (index + 1) % roles.length; // Cycle through the roles
+            document.getElementById("role").textContent = roles[index];
+        }
+
+        setInterval(changeRole, 2000); // Change every 2 seconds
+    </script>
+</body>
+</html>
+       
